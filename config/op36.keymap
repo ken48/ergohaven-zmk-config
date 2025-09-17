@@ -10,12 +10,6 @@
     require-prior-idle-ms = <125>;
 };
 
-&lt {
-    quick-tap-ms = <200>;
-    require-prior-idle-ms = <150>;
-    tapping-term-ms = <250>;
-};
-
 / {
     behaviors {
         hml: home_row_mod_left {
@@ -51,6 +45,8 @@
         leftesc {
             bindings = <&kp ESC>;
             key-positions = <32 0>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <200>;
         };
     };
 
