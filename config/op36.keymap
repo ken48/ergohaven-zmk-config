@@ -10,6 +10,12 @@
     require-prior-idle-ms = <125>;
 };
 
+&lt {
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <200>;
+    tapping-term-ms = <250>;
+};
+
 / {
     behaviors {
         hml: home_row_mod_left {
@@ -39,16 +45,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        leftesc {
-            bindings = <&kp ESC>;
-            key-positions = <32 0>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <200>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         dotspace: dotspace {
@@ -64,10 +61,10 @@
 
         base {
             bindings = <
-  &kp Q                &kp W  &kp E  &kp R         &kp T                                         &kp Y  &kp U      &kp I      &kp O    &kp P
-  &hml LEFT_CONTROL A  &kp S  &kp D  &kp F         &kp G                                         &kp H  &kp J      &kp K      &kp L    &hmr RIGHT_CONTROL SEMI
-  &hml LEFT_SHIFT Z    &kp X  &kp C  &kp V         &kp B                                         &kp N  &kp M      &kp COMMA  &kp DOT  &hmr RIGHT_SHIFT SLASH
-                                     &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE    &kp LA(BACKSPACE)  &mo 1  &kp ENTER
+  &kp Q                &kp W  &kp E  &kp R         &kp T                                           &kp Y  &kp U      &kp I      &kp O    &kp P
+  &hml LEFT_CONTROL A  &kp S  &kp D  &kp F         &kp G                                           &kp H  &kp J      &kp K      &kp L    &hmr RIGHT_CONTROL SEMI
+  &hml LEFT_SHIFT Z    &kp X  &kp C  &kp V         &kp B                                           &kp N  &kp M      &kp COMMA  &kp DOT  &hmr RIGHT_SHIFT SLASH
+                                     &kp LEFT_GUI  &kp LEFT_ALT  &lt 3 SPACE    &kp LA(BACKSPACE)  &mo 1  &kp ENTER
             >;
 
             display-name = "Base";
@@ -93,6 +90,15 @@
             >;
 
             display-name = "Functional";
+        };
+
+        lefthand {
+            bindings = <
+  &kp ESC  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
