@@ -92,13 +92,15 @@
             display-name = "Functional";
         };
 
-        lefthand {
+        left {
             bindings = <
   &kp ESC  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
   &trans   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
   &trans   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
                            &trans  &trans  &trans    &trans  &trans  &trans
             >;
+
+            label = "LeftHand";
         };
     };
 };
