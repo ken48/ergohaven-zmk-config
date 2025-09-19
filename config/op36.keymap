@@ -54,6 +54,24 @@
             bindings = <&kp KP_DOT &kp SPACE>;
             label = "DOTSPACE";
         };
+
+        lang: lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_wait_time 20>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            label = "LANG";
+            wait-ms = <20>;
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -74,7 +92,7 @@
             bindings = <
   &none             &kp N3  &kp N2  &kp N1  &kp NUMBER_0                        &kp ESC  &kp BACKSPACE   &kp UP_ARROW    &none            &kp LC(LG(T))
   &kp LEFT_CONTROL  &kp N6  &kp N5  &kp N4  &kp LA(Y)                           &kp TAB  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(LC(E))
-  &kp LEFT_SHIFT    &kp N9  &kp N8  &kp N7  &kp LA(PERIOD)                      &none    &kp DELETE      &mo 2           &none            &kp LC(SPACE)
+  &kp LEFT_SHIFT    &kp N9  &kp N8  &kp N7  &kp LA(PERIOD)                      &none    &kp DELETE      &mo 2           &none            &lang
                                     &trans  &trans          &dotspace    &none  &none    &none
             >;
 
