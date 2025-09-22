@@ -11,9 +11,11 @@
 };
 
 &lt {
-    quick-tap-ms = <225>;
-    require-prior-idle-ms = <200>;
-    tapping-term-ms = <275>;
+    quick-tap-ms = <150>;
+    require-prior-idle-ms = <25>;
+    tapping-term-ms = <225>;
+    retro-tap;
+    hold-trigger-on-release;
 };
 
 / {
