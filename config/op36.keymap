@@ -101,10 +101,10 @@
 
         num {
             bindings = <
-  &kp ESC           &kp C_BRI_DN   &kp LG(LS(N4))   &kp C_BRI_UP  &none                        &kp N0     &kp N1  &kp N2  &kp N3  &kp BACKSPACE
-  &kp LEFT_CONTROL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS                  &none      &kp N4  &kp N5  &kp N6  &kp LA(Y)
-  &kp LEFT_SHIFT    &kp C_VOL_DN   &kp C_MUTE       &kp C_VOL_UP  &none                        &kp ENTER  &kp N7  &kp N8  &kp N9  &kp LA(DOT)
-                                                    &trans        &trans       &none    &none  &none      &none
+  &kp ESC           &kp C_BRI_DN   &kp LG(LS(N4))   &kp C_BRI_UP  &none                            &kp BACKSPACE  &kp N1  &kp N2  &kp N3  &none
+  &kp LEFT_CONTROL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS                      &kp N0         &kp N4  &kp N5  &kp N6  &kp LA(Y)
+  &kp LEFT_SHIFT    &kp C_VOL_DN   &kp C_MUTE       &kp C_VOL_UP  &none                            &kp ENTER      &kp N7  &kp N8  &kp N9  &kp LA(DOT)
+                                                    &trans        &trans       &kp SPACE    &none  &none          &none
             >;
 
             display-name = "Numbers";
