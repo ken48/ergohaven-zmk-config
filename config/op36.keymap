@@ -79,10 +79,10 @@
 
         base {
             bindings = <
-  &kp Q                &kp W  &kp E  &kp R         &kp T                                               &kp Y  &kp U          &kp I      &kp O    &kp P
-  &hml LEFT_CONTROL A  &kp S  &kp D  &kp F         &kp G                                               &kp H  &kp J          &kp K      &kp L    &hmr RIGHT_CONTROL SEMI
-  &hml LEFT_SHIFT Z    &kp X  &kp C  &kp V         &kp B                                               &kp N  &kp M          &kp COMMA  &kp DOT  &hmr RIGHT_SHIFT SLASH
-                                     &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 SPACE    &kp LA(BACKSPACE)  &mo 2  &kp RIGHT_ALT
+  &kp Q                &kp W  &kp E  &kp R         &kp T                                                 &kp Y  &kp U          &kp I      &kp O    &kp P
+  &hml LEFT_CONTROL A  &kp S  &kp D  &kp F         &kp G                                                 &kp H  &kp J          &kp K      &kp L    &hmr RIGHT_CONTROL SEMI
+  &hml LEFT_SHIFT Z    &kp X  &kp C  &kp V         &kp B                                                 &kp N  &kp M          &kp COMMA  &kp DOT  &hmr RIGHT_SHIFT SLASH
+                                     &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 SPACE    &lt 2 LA(BACKSPACE)  &mo 3  &kp RIGHT_ALT
             >;
 
             display-name = "Base";
@@ -90,13 +90,25 @@
 
         num {
             bindings = <
-  &kp ESC           &kp C_BRI_DN  &kp KP_SLASH     &kp C_BRI_UP  &kp LG(LS(N4))                      &none   &kp N4         &kp N5  &kp N6  &none
-  &kp LEFT_CONTROL  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_PLUS   &none                               &kp N0  &kp N1         &kp N2  &kp N3  &kp LA(Y)
-  &kp LEFT_SHIFT    &kp C_VOL_DN  &kp C_MUTE       &kp C_VOL_UP  &kp EQUAL                           &none   &kp N7         &kp N8  &kp N9  &kp LA(DOT)
-                                                   &trans        &trans          &none    &kp SPACE  &mo 2   &kp RIGHT_ALT
+  &kp ESC           &kp C_BRI_DN  &none       &kp C_BRI_UP  &kp LG(LS(N4))                  &none   &kp N4  &kp N5  &kp N6  &none
+  &kp LEFT_CONTROL  &none         &none       &none         &none                           &kp N0  &kp N1  &kp N2  &kp N3  &none
+  &kp LEFT_SHIFT    &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp SPACE                       &none   &kp N7  &kp N8  &kp N9  &none
+                                              &trans        &trans          &none    &mo 2  &mo 3   &trans
             >;
 
             display-name = "Numbers";
+        };
+
+        sym {
+            display-name = "Base";
+            bindings = <
+  &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &kp LA(T)                  &kp LA(Y)  &kp LA(U)  &kp LA(I)      &kp LA(O)    &kp LA(P)
+  &kp LA(A)  &kp LA(S)  &kp LA(D)  &kp LA(F)  &kp LA(G)                  &kp LA(H)  &kp LA(J)  &kp LA(K)      &kp LA(L)    &kp LA(SEMICOLON)
+  &kp LA(Z)  &kp LA(X)  &kp LA(C)  &kp LA(V)  &kp LA(B)                  &kp LA(N)  &kp LA(M)  &kp LA(COMMA)  &kp LA(DOT)  &kp LA(SLASH)
+                                   &none      &none      &none    &none  &none      &none
+            >;
+
+            label = "Symbols";
         };
 
         nav {
@@ -104,7 +116,7 @@
   &kp ESC           &kp F6  &kp F5  &kp F4  &kp F11                      &none      &kp BACKSPACE   &kp UP_ARROW    &none            &kp LC(LG(T))
   &kp LEFT_CONTROL  &kp F3  &kp F2  &kp F1  &kp F10                      &kp TAB    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(LC(E))
   &kp LEFT_SHIFT    &kp F9  &kp F8  &kp F7  &kp F12                      &kp ENTER  &kp DELETE      &none           &none            &lang
-                                    &trans  &trans   &dotspace    &none  &none      &kp RIGHT_ALT
+                                    &trans  &trans   &dotspace    &none  &none      &trans
             >;
 
             display-name = "Navigation";
