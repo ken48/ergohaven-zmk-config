@@ -103,7 +103,7 @@
             bindings = <
   &kp ESC           &kp F6  &kp F5  &kp F4  &kp F11                      &none      &kp BACKSPACE   &kp UP_ARROW    &none            &kp LC(LG(T))
   &kp LEFT_SHIFT    &kp F3  &kp F2  &kp F1  &kp F10                      &kp TAB    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(LC(E))
-  &kp LEFT_CONTROL  &kp F9  &kp F8  &kp F7  &kp F12                      &kp ENTER  &kp DELETE      &none           &kp CAPSLOCK     &lang
+  &kp LEFT_CONTROL  &kp F9  &kp F8  &kp F7  &kp F12                      &kp ENTER  &kp DELETE      &none           &caps_word       &lang
                                     &trans  &trans   &dotspace    &none  &none      &trans
             >;
 
