@@ -107,7 +107,7 @@
                                     &trans  &trans   &dotspace    &none  &none      &trans
             >;
 
-            display-name = "Navigation";
+            display-name = "Nav";
         };
 
         sym {
