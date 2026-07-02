@@ -82,10 +82,10 @@
 
         base {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R         &kp T                                   &kp Y           &kp U             &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &kp F         &kp G                                   &kp H           &kp J             &kp K      &kp L    &kp SEMICOLON
-  &kp Z  &kp X  &kp C  &kp V         &kp B                                   &kp N           &kp M             &kp COMMA  &kp DOT  &kp SLASH
-                       &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 SPACE    &mo 2  &kp LEFT_SHIFT  &kp LEFT_CONTROL
+  &kp Q  &kp W  &kp E  &kp R             &kp T                                   &kp Y           &kp U         &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D  &kp F             &kp G                                   &kp H           &kp J         &kp K      &kp L    &kp SEMICOLON
+  &kp Z  &kp X  &kp C  &kp V             &kp B                                   &kp N           &kp M         &kp COMMA  &kp DOT  &kp SLASH
+                       &kp LEFT_CONTROL  &kp LEFT_COMMAND  &lt 1 SPACE    &mo 2  &kp LEFT_SHIFT  &kp LEFT_ALT
             >;
 
             display-name = "Base";
@@ -104,10 +104,10 @@
 
         nav {
             bindings = <
-  &kp ESC           &kp F3  &kp F2  &kp F1        &kp F10                               &none           &kp BACKSPACE     &kp UP_ARROW    &none            &kp LC(LG(T))
-  &kp LEFT_SHIFT    &kp F6  &kp F5  &kp F4        &kp F11                               &kp TAB         &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(LC(E))
-  &kp LEFT_CONTROL  &kp F9  &kp F8  &kp F7        &kp F12                               &kp ENTER       &kp DELETE        &none           &none            &lang
-                                    &kp LEFT_ALT  &kp LEFT_COMMAND  &dotspace    &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL
+  &kp ESC           &kp F3  &kp F2  &kp F1        &kp F10                               &none           &kp BACKSPACE   &kp UP_ARROW    &none            &kp LC(LG(T))
+  &kp LEFT_SHIFT    &kp F6  &kp F5  &kp F4        &kp F11                               &kp TAB         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(LC(E))
+  &kp LEFT_CONTROL  &kp F9  &kp F8  &kp F7        &kp F12                               &kp ENTER       &kp DELETE      &none           &none            &lang
+                                    &kp LEFT_ALT  &kp LEFT_COMMAND  &dotspace    &none  &kp LEFT_SHIFT  &kp RIGHT_ALT
             >;
 
             display-name = "Nav";
@@ -116,10 +116,10 @@
         sym {
             display-name = "Sym";
             bindings = <
-  &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &kp LA(T)                       &kp LA(Y)  &kp LA(U)  &kp LA(I)      &kp LA(O)    &kp LA(P)
-  &kp LA(A)  &kp LA(S)  &kp LA(D)  &kp LA(F)  &kp LA(G)                       &kp LA(H)  &kp LA(J)  &kp LA(K)      &kp LA(L)    &kp LA(SEMI)
-  &kp LA(Z)  &kp LA(X)  &kp LA(C)  &kp LA(V)  &kp LA(B)                       &kp LA(N)  &kp LA(M)  &kp LA(COMMA)  &kp LA(DOT)  &kp LA(SLASH)
-                                   &none      &kp LEFT_SHIFT  &none    &none  &none      &none
+  &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &kp LA(T)                       &kp LA(Y)       &kp LA(U)  &kp LA(I)      &kp LA(O)    &kp LA(P)
+  &kp LA(A)  &kp LA(S)  &kp LA(D)  &kp LA(F)  &kp LA(G)                       &kp LA(H)       &kp LA(J)  &kp LA(K)      &kp LA(L)    &kp LA(SEMI)
+  &kp LA(Z)  &kp LA(X)  &kp LA(C)  &kp LA(V)  &kp LA(B)                       &kp LA(N)       &kp LA(M)  &kp LA(COMMA)  &kp LA(DOT)  &kp LA(SLASH)
+                                   &none      &kp LEFT_SHIFT  &none    &none  &kp LEFT_SHIFT  &none
             >;
         };
     };
