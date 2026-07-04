@@ -93,10 +93,10 @@
 
         num {
             bindings = <
-  &kp ESC           &kp C_BRI_DN  &kp KP_SLASH     &kp C_BRI_UP  &kp LG(LS(N4))                  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
-  &kp LEFT_SHIFT    &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_PLUS   &kp EQUAL                       &none   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
-  &kp LEFT_CONTROL  &kp C_VOL_DN  &kp C_MUTE       &kp C_VOL_UP  &kp SPACE                       &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-                                                   &trans        &trans          &none    &mo 2  &trans  &trans
+  &kp ESC           &kp C_BRI_DN       &none             &kp C_BRI_UP     &kp LG(LS(N4))                  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
+  &kp LEFT_SHIFT    &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &none                           &none   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
+  &kp LEFT_CONTROL  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &kp SPACE                       &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+                                                         &trans           &trans          &none    &mo 2  &trans  &mo 3
             >;
 
             display-name = "Nums";
@@ -111,6 +111,18 @@
             >;
 
             display-name = "Nav";
+        };
+
+        sym {
+            display-name = "Base";
+            bindings = <
+  &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &kp LA(T)                       &kp LA(Y)       &kp LA(U)  &kp LA(I)      &kp LA(O)    &kp LA(P)
+  &kp LA(A)  &kp LA(S)  &kp LA(D)  &kp LA(F)  &kp LA(G)                       &kp LA(H)       &kp LA(J)  &kp LA(K)      &kp LA(L)    &kp LA(SEMICOLON)
+  &kp LA(Z)  &kp LA(X)  &kp LA(C)  &kp LA(V)  &kp LA(B)                       &kp LA(N)       &kp LA(M)  &kp LA(COMMA)  &kp LA(DOT)  &kp LA(SLASH)
+                                   &none      &kp LEFT_SHIFT  &none    &none  &kp LEFT_SHIFT  &none
+            >;
+
+            label = "Sym";
         };
     };
 };
