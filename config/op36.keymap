@@ -93,10 +93,10 @@
 
         num {
             bindings = <
-  &kp ESC           &kp C_BRI_DN       &none             &kp C_BRI_UP     &kp LG(LS(N4))                  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
-  &kp LEFT_SHIFT    &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &none                           &none   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
-  &kp LEFT_CONTROL  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &kp SPACE                       &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-                                                         &trans           &trans          &none    &mo 2  &trans  &mo 3
+  &kp ESC           &kp C_BRI_DN       &none             &kp C_BRI_UP     &kp LG(LS(N4))                  &kp LEFT_BRACKET   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS
+  &kp LEFT_SHIFT    &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &none                           &kp RIGHT_BRACKET  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL
+  &kp LEFT_CONTROL  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &kp SPACE                       &kp GRAVE          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+                                                         &trans           &trans          &none    &mo 2  &trans             &mo 3
             >;
 
             display-name = "Nums";
